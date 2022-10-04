@@ -66,7 +66,7 @@ def local_search(sol, objective, get_neighbor, maxit=50):
       n = get_neighbor(sol)
       n_val = objective(n)
       # se o n de conflitos do vizinhos for menor que o melhor valor registrado, sub sol atual 
-      if n_val <= best_val:
+      if n_val < best_val:
           sol = copy.copy(n)
           c_val = n_val
           best_val = n_val

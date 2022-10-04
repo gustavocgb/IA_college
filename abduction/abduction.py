@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 def explain(observations, kb, explanation=set()):
 
